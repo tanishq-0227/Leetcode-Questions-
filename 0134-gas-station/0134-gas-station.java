@@ -13,6 +13,11 @@ class Solution {
                 st = i + 1;
             }
         }
-        return (total_needed < 0) ? -1 : st;
+        if(total_needed<0){
+            return -1;
+        }else{
+            return st;
+        }
+        
     }
 }
